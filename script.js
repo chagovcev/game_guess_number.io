@@ -4,7 +4,7 @@ let randomNumber = Math.floor(Math.random() * 100);
 
 let guessNumber = function(){
     
-    let userInput = prompt('Угадай');
+    let userInput = prompt('Угадай число от 1 до 100');
 
         if(userInput){
             let myV = Number(userInput);
@@ -18,11 +18,11 @@ let guessNumber = function(){
                 
             }
             else if(myV > randomNumber) {
-                alert('Больше');
+                alert('Загаданное число меньше');
                 guessNumber();
             }
             else if(myV < randomNumber) {
-                alert('Меньше');
+                alert('Загаданное число больше');
                 guessNumber();
             }
         }
